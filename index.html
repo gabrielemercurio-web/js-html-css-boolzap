@@ -3,27 +3,33 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Esercitazione Boolzap</title>
     </head>
     <body>
 
         <div id="background">
-            <div class="bg-green"></div>
+            <div class="bg-darkgreen"></div>
 
             <main id="wrapper">
 
                 <div id="wp-left">
-                    <section class="impostazioni">
-                        <div class="img-utente"></div>
+
+                    <section class="impostazioni 7%">
+                        <div class="img-utente">
+                            <a href="#"><div class="img img-0"></div></a>
+                        </div>
                         <div class="opzioni">
-                            <span class="material-icons">donut_large</span>
-                            <span class="chat material-icons">chat</span>
-                            <span class="material-icons">more_vert</span>
+                            <a href="#"><span class="material-icons">donut_large</span></a>
+                            <a href="#"><span class="icon-chat material-icons">chat</span></a>
+                            <a href="#"><span class="material-icons">more_vert</span></a>
                         </div>
                     </section>
-                    <section class="attiva-notifiche">
+
+                    <section class="attiva-notifiche 10%">
                         <div class="icona-campanella">
                             <span class="material-icons">notifications_off</span>
                         </div>
@@ -32,32 +38,433 @@
                             <a href="#">Attiva notifiche desktop &rang;</a>
                         </div>
                     </section>
-                    <section class="cerca">
+
+                    <section class="cerca 6%">
                         <div class="cerca-wrapper">
-                            <span class="material-icons">search</span>
-                            <input placeholder="Cerca o inizia una nuova chat">
+                            <a href="#"><span class="material-icons">search</span></a>
+                            <input type="search" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </section>
-                    <section class="all-chat">
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
-                        <div class="single-chat"></div>
+
+                    <section class="all-chat 77%">
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div>
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div>
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div>
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-chat">
+                            <div class="img-utente">
+                                <div class="img img-1"></div>
+                            </div>
+                            <div class="chat">
+                                <div class="friend-name">
+                                    <div class="name">
+                                        <p>Pinco Pallino</p>
+                                    </div>
+                                    <div class="time-date">
+                                        <p>Domenica</p>
+                                    </div>
+                                </div>
+                                <div class="anteprima-chat">
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    </div>
+                                    <div class="option-chat anim-scale-in">
+                                        <!-- <div class="bg-pin">
+                                            <svg class="svg-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="10" height="10"><path fill-rule="evenodd" d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z"></path></svg>
+                                        </div> -->
+                                        <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
-                </div>
+
+                </div> <!--CHIUSURA WRAPPER LEFT ------------------>
 
                 <div id="wp-right">
-                    <section class="right-top"></section>
-                    <section class="right-center"></section>
-                    <section class="right-bottom"></section>
+
+                    <section class="right-top">
+                        <div class="right-top-left">
+                            <div class="img"></div>
+                            <p>Pdor</p>
+                        </div>
+
+                        <div class="right-top-right">
+                            <a href="#"><span class="material-icons">search</span></a>
+                            <a href="#"><span class="allegato material-icons">attach_file</span></a>
+                            <a href="#"><span class="material-icons">more_vert</span></a>
+                        </div>
+                    </section>
+
+                    <section class="right-center">
+                        <div class="bubble contatto-bubble-text-msg">
+                            <h1>Pdor</h1>
+                            <p class="text-message">Chi osa interrompere il sonno di Pdor, figlio di Kmer, della tribù di Istar, della terra desolata del Cfnir?! Pdor, colui che era, colui che è stato e colui che sempre sarà (ciuccia 'ki e ciuccia là)!?</p>
+                            <small>17:42</small>
+                            <span class="bubble-angle material-icons">signal_cellular_4_bar</span>
+                        </div>
+
+                        <div class="data-messaggio">
+                            <p>Oggi</p>
+                        </div>
+
+                        <div class="bubble mio-bubble-text-msg">
+                            <h1>Tecnigrafo</h1>
+                            <p class="text-message">Scusi, Signor Kmer...</p>
+                            <small>17:45</small>
+                            <span class="bubble-angle material-icons">signal_cellular_4_bar</span>
+                        </div>
+
+                    </section>
+
+                    <section class="right-bottom">
+                        <div class="emoji">
+                            <a href="#"><span class="material-icons">tag_faces</span></a>
+                        </div>
+
+                        <div class="scrivi-messaggio">
+                            <input type="text" placeholder="Scrivi un messaggio" autofocus>
+                        </div>
+
+                        <div class="icona-messaggio-vocale">
+                            <a href="#"><span class="material-icons">mic</span></a>
+                        </div>
+                    </section>
+
                 </div>
 
             </main>

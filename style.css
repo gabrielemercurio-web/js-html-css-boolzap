@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
     text-decoration: none;
+    line-height: 0px;
+    color: #888;
 }
+
+p {
+    margin-bottom: 0px;
+}
+
 
 
 /* ----------------------------------- BIG BACKGROUND */
@@ -21,7 +28,7 @@ a {
     position: relative;
 }
 
-.bg-green {
+.bg-darkgreen {
     width: 100%;
     height: 150px;
     background-color: #019688;
@@ -36,7 +43,7 @@ a {
     height: 95%;
     position: absolute;
     border-radius: 0px;
-    box-shadow: 0px 5px 10px 0px #3338 ;
+    box-shadow: 0px 5px 10px 0px #9998 ;
     margin-top: 25px;
 }
 
@@ -58,32 +65,44 @@ a {
 }
 
 section.impostazioni {
-    height: 8%;
+    height: 7%;
     background-color: #ededed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 12px;
 }
 
-.impostazioni .img-utente {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-image: url('https://www.ansa.it/webimages/img_457x/2015/9/11/c79a4f290e807deccbe2a03cefd1ccba.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.impostazioni .opzioni {
-    width: 140px;
-    color: #aaa;
+.img-utente {
+    width: 18%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.impostazioni span.chat {
+.img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: #aaa;
+}
+
+.impostazioni .img-0 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQInLTl7PzhK2Js_m4L7Ii4YO1OWL5pEOat1LbfS_4KLsOozCyT&usqp=CAU');
+}
+
+.impostazioni .opzioni {
+    width: 35%;
+    color: #888;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.impostazioni span.icon-chat {
     margin-right: -5px;
     margin-top: 2px;
 }
@@ -97,7 +116,7 @@ section.attiva-notifiche {
     padding: 0px 12px;
 }
 
-section .icona-campanella {
+.icona-campanella {
     width: 45px;
     height: 45px;
     color: #9de1fe;
@@ -149,9 +168,9 @@ section.cerca {
 }
 
 .cerca-wrapper input {
-    color: #3338;
+    color: #333;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     background-color: transparent;
     padding: 5px 10px 5px 30px;
     border: 0px transparent;
@@ -161,44 +180,316 @@ input:focus {
     outline:none;
 }
 
-.cerca-wrapper input[placeholder] {
-    font-size: 14px;
-    font-weight: 200;
-    color: #333;
+::placeholder {
+    font-size: 15px;
+    color: #ccc;
 }
 
+/* ---------------------------------- ALL CHAT */
+section.all-chat {
+    width: 100%;
+    height: 77%;
+    background-color: #fff;
+    overflow-y: scroll;
+}
 
+.single-chat {
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-/* ----------------------- WRAPPER RIGHT */
-
-#wp-right {
-    width: 70%;
+.chat {
+    width: 82%;
     height: 100%;
-    background-color: blue;
-    float: left;
     display: flex;
     flex-direction: column;
 }
 
-div.right-top {
-    height: 8%;
-    background-color: yellow;
+.friend-name {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
 }
 
-div.right-center {
-    height: 84%;
+.name{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #fff;
+}
+
+.name p {
+    font-size: 15px;
+    font-weight: 600;
+    /* margin-top: 10px; */
+}
+
+.time-date {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.time-date p {
+    font-size: 13px;
+    color: #999;
+}
+
+.anteprima-chat {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.anteprima-chat .text {
+    max-width: 85%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+.anteprima-chat .text p {
+    font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* margin-bottom: 10px; */
+}
+
+.option-chat {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.option-chat .bg-pin {
+    width: 18px;
+    height: 18px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.svg-pin path {
+    fill: #fff;
+}
+
+.svg-show-options {
+    margin-top: 3px;
+}
+
+.svg-show-options path {
+    fill: #ccc;
+}
+
+
+
+/* --------------------------- WRAPPER RIGHT */
+
+#wp-right {
+    width: 70%;
+    height: 100%;
+    background-color: #ededed;
+    float: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section.right-top {
+    width: 100%;
+    height: 7%;
+    padding: 0px 17px;
+    border: 1px solid #5552;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-top-left {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-top-left .img {
+    background-image: url('https://pbs.twimg.com/media/DCrp3-RXUAI9TnI.jpg');
+}
+
+.right-top-left .img {
+    margin-right: 17px;
+}
+
+.right-top-left p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+section.right-center {
+    height: 85%;
     background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
     background-repeat: repeat;
     background-size: contain;
+    padding: 20px 80px;
+    overflow-y: scroll;
 }
 
-div.right-bottom {
+.right-center .bubble {
+    max-width: 45%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px #3332;
+    padding: 15px 15px 5px 15px;
+    float: left;
+    clear: both;
+}
+
+.right-center .contatto-bubble-text-msg{
+    border-radius: 0px 8px 8px 8px;
+    position: relative;
+}
+
+h1 {
+    font-size: 15px;
+    color: red;
+    font-weight: 600;
+    float: left;
+    clear: both;
+}
+
+.text-message {
+    float: left;
+    clear: both;
+}
+
+small {
+    font-size: 12px;
+    color: #bbb;
+    float: right;
+    clear: both;
+    margin-left: 30px;
+}
+
+.data-messaggio {
+    max-width: 80%;
+    height: auto;
+    background-color: #e1f5feeb;
+    box-shadow: 0px 2px 3px 0px #3332;
+    float: left;
+    clear: both;
+    margin-left: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.right-center .mio-bubble-text-msg {
+    float: right;
+    clear: both;
+    background-color: #DCF8C6;
+    border-radius: 8px 0px 8px 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.bubble-angle {
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.mio-bubble-text-msg .bubble-angle {
+    color: #DCF8C6;
+    right: -11px;
+    top: -12px;
+}
+
+.contatto-bubble-text-msg .bubble-angle {
+    left: -11px;
+    top: -12px;
+    color: #fff;
+}
+
+.mio-bubble-text-msg h1 {
+    color: green;
+}
+
+section.right-bottom {
     height: 8%;
-    background-color: darkred;
 }
 
+.right-top-right {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.right-top-right .allegato {
+    transform: rotate(45deg);
+}
 
+.right-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrivi-messaggio input {
+    color: #333;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 5px 10px 5px 30px;
+    border: 0px transparent;
+}
+
+.scrivi-messaggio {
+    width: 84%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.icona-messaggio-vocale {
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
