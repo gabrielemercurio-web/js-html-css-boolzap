@@ -64,6 +64,8 @@ p {
     width: 100%;
 }
 
+
+/* --------------------------------- IMPOSTAZIONI */
 section.impostazioni {
     height: 7%;
     background-color: #ededed;
@@ -107,6 +109,8 @@ section.impostazioni {
     margin-top: 2px;
 }
 
+
+/* ---------------------------- ATTIVA NOTIFICHE */
 section.attiva-notifiche {
     height: 10%;
     background-color: #9de1fe;
@@ -144,6 +148,8 @@ a:hover {
     text-decoration: underline;
 }
 
+
+/* -------------------------------- SEZIONE CERCA */
 section.cerca {
     height: 6%;
     background-color: #ededed;
@@ -193,6 +199,8 @@ section.all-chat {
     overflow-y: scroll;
 }
 
+
+/* ----------------------------SINGLE CHAT */
 .single-chat {
     width: 100%;
     height: 75px;
@@ -315,6 +323,8 @@ section.all-chat {
 
 }
 
+
+/* --------------------------------- RIGHT TOP */
 section.right-top {
     width: 100%;
     height: 7%;
@@ -345,6 +355,9 @@ section.right-top {
     font-weight: 500;
 }
 
+
+
+/* --------------------------------- RIGHT CENTER */
 section.right-center {
     height: 85%;
     background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
@@ -438,6 +451,9 @@ small {
     color: green;
 }
 
+
+
+/* --------------------------------- RIGHT BOTTOM */
 section.right-bottom {
     height: 8%;
 }
