@@ -25,6 +25,7 @@ p {
     background-color: #d9dbd4;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -32,6 +33,8 @@ p {
     width: 100%;
     height: 150px;
     background-color: #019688;
+    position: absolute;
+    z-index: 1;
 }
 
 
@@ -41,10 +44,10 @@ p {
 #wrapper {
     width: 1440px;
     height: 95%;
-    position: absolute;
     border-radius: 0px;
     box-shadow: 0px 5px 10px 0px #9998 ;
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    z-index: 2;
 }
 
 
@@ -67,7 +70,7 @@ p {
 
 /* --------------------------------- IMPOSTAZIONI */
 section.impostazioni {
-    height: 7%;
+    height: 60px;
     background-color: #ededed;
     display: flex;
     justify-content: space-between;
@@ -112,7 +115,7 @@ section.impostazioni {
 
 /* ---------------------------- ATTIVA NOTIFICHE */
 section.attiva-notifiche {
-    height: 10%;
+    height: 90px;
     background-color: #9de1fe;
     display: flex;
     justify-content: flex-start;
@@ -151,7 +154,7 @@ a:hover {
 
 /* -------------------------------- SEZIONE CERCA */
 section.cerca {
-    height: 6%;
+    height: 60px;
     background-color: #ededed;
     border-bottom: 1px solid #3332;
     display: flex;
@@ -194,7 +197,7 @@ input:focus {
 /* ---------------------------------- ALL CHAT */
 section.all-chat {
     width: 100%;
-    height: 77%;
+    height: calc(100% - 60px - 90px - 60px);
     background-color: #fff;
     overflow-y: scroll;
 }
@@ -327,7 +330,7 @@ section.all-chat {
 /* --------------------------------- RIGHT TOP */
 section.right-top {
     width: 100%;
-    height: 7%;
+    height: 60px;
     padding: 0px 17px;
     border: 1px solid #5552;
     display: flex;
@@ -359,7 +362,7 @@ section.right-top {
 
 /* --------------------------------- RIGHT CENTER */
 section.right-center {
-    height: 85%;
+    height: calc(100% - 60px - 80px);
     background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
     background-repeat: repeat;
     background-size: contain;
@@ -377,7 +380,7 @@ section.right-center {
     clear: both;
 }
 
-.right-center .contatto-bubble-text-msg{
+.right-center .contatto-bubble-msg{
     border-radius: 0px 8px 8px 8px;
     position: relative;
 }
@@ -421,7 +424,7 @@ small {
     text-transform: uppercase;
 }
 
-.right-center .mio-bubble-text-msg {
+.right-center .mio-bubble-msg {
     float: right;
     clear: both;
     background-color: #DCF8C6;
@@ -430,18 +433,26 @@ small {
     position: relative;
 }
 
+.right-center .mio-bubble-msg svg {
+    display: none;
+}
+
+.right-center .contatto-bubble-msg svg {
+    display: none;
+}
+
 .bubble-angle {
     transform: rotate(45deg);
     position: absolute;
 }
 
-.mio-bubble-text-msg .bubble-angle {
+.mio-bubble-msg .bubble-angle {
     color: #DCF8C6;
     right: -11px;
     top: -12px;
 }
 
-.contatto-bubble-text-msg .bubble-angle {
+.contatto-bubble-msg .bubble-angle {
     left: -11px;
     top: -12px;
     color: #fff;
@@ -455,7 +466,7 @@ small {
 
 /* --------------------------------- RIGHT BOTTOM */
 section.right-bottom {
-    height: 8%;
+    height: 80px;
 }
 
 .right-top-right {
