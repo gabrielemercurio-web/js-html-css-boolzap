@@ -191,7 +191,7 @@ input:focus {
 
 ::placeholder {
     font-size: 15px;
-    color: #ccc;
+    color: #bbb;
 }
 
 /* ---------------------------------- ALL CHAT */
@@ -370,19 +370,17 @@ section.right-center {
     overflow-y: scroll;
 }
 
-.right-center .bubble {
-    max-width: 45%;
+.right-center .contatto-bubble-msg {
+    max-width: 60%;
     height: auto;
     background-color: #fff;
     box-shadow: 0px 2px 3px 0px #3332;
     padding: 15px 15px 5px 15px;
-    float: left;
-    clear: both;
-}
-
-.right-center .contatto-bubble-msg{
     border-radius: 0px 8px 8px 8px;
     position: relative;
+    float: left;
+    clear: both;
+    /* display: none; */
 }
 
 h1 {
@@ -425,12 +423,21 @@ small {
 }
 
 .right-center .mio-bubble-msg {
+    max-width: 60%;
+    height: auto;
     float: right;
     clear: both;
     background-color: #DCF8C6;
     border-radius: 8px 0px 8px 8px;
+    box-shadow: 0px 2px 3px 0px #3332;
+    padding: 15px 15px 5px 15px;
     margin-top: 20px;
     position: relative;
+    /* display: none; */
+}
+
+.template {
+    display: none;
 }
 
 .right-center .mio-bubble-msg svg {
@@ -494,6 +501,7 @@ section.right-bottom {
 }
 
 .scrivi-messaggio input {
+    width: 100%;
     color: #333;
     font-size: 15px;
     background-color: transparent;
@@ -514,7 +522,7 @@ section.right-bottom {
 .icona-messaggio-vocale {
     width: 8%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
