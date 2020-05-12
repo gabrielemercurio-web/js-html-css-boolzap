@@ -370,7 +370,7 @@ section.right-center {
     overflow-y: scroll;
 }
 
-.right-center .contatto-bubble-msg {
+.contatto-bubble-msg {
     max-width: 60%;
     height: auto;
     background-color: #fff;
@@ -422,7 +422,7 @@ small {
     text-transform: uppercase;
 }
 
-.right-center .mio-bubble-msg {
+.mio-bubble-msg {
     max-width: 60%;
     height: auto;
     float: right;
@@ -440,11 +440,11 @@ small {
     display: none;
 }
 
-.right-center .mio-bubble-msg svg {
+.mio-bubble-msg svg {
     display: none;
 }
 
-.right-center .contatto-bubble-msg svg {
+.contatto-bubble-msg svg {
     display: none;
 }
 
@@ -500,15 +500,6 @@ section.right-bottom {
     align-items: center;
 }
 
-.scrivi-messaggio input {
-    width: 100%;
-    color: #333;
-    font-size: 15px;
-    background-color: transparent;
-    padding: 5px 10px 5px 30px;
-    border: 0px transparent;
-}
-
 .scrivi-messaggio {
     width: 84%;
     display: flex;
@@ -517,6 +508,15 @@ section.right-bottom {
     background-color: #fff;
     border-radius: 20px;
     padding: 5px 10px;
+}
+
+.scrivi-messaggio input {
+    width: 100%;
+    color: #333;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 5px 10px 5px 30px;
+    border: 0px transparent;
 }
 
 .icona-messaggio-vocale {
