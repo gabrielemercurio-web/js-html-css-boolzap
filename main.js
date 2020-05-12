@@ -14,7 +14,7 @@ function invia_messaggio (){
     // salvare il messaggio scritto dell'utente in una var
     var messaggio_utente = $('.scrivi-messaggio input').val();
 
-    var bubble = $('.template .bubble-msg').clone();
+    var bubble = $('.template .bubble-msg').clone().prepend('<h1>Gabriele</h1>');
 
     bubble.addClass('mio-bubble-msg');
 
@@ -26,31 +26,50 @@ function invia_messaggio (){
     if ($('#input-msg').val() == '') {
         alert('Errore: input vuoto!');
     } else {
+
+        // Inserisco il bubble con il mio messaggio dentro allo spazio centrale
         $('.right-center').append(bubble);
+
+// Messaggio di Risposta automatica dopo 1 secondo
+        setTimeout(function() {
+
+            var bubble_risposta = $('.template .bubble-msg').clone().prepend('<h1>Pdor</h1>');
+
+            bubble_risposta.addClass('contatto-bubble-msg');
+
+            bubble_risposta.find('p.text-message').text('Ok!');
+
+            $('.right-center').append(bubble_risposta);
+
+        }, 1000);
     };
 
     $('#input-msg').val('');
 
-
-    // Messaggio di Risposta
-    setTimeout(function() {
-
-        var bubble_risposta = $('.templete .bubble-msg').clone();
-
-        bubble_risposta.addClass('contatto-bubble-msg');
-
-        bubble_risposta.find('p.text-message').text('Ok!');
-
-        $('.right-center').append(bubble_risposta);
-
-        console.log(bubble_risposta);
-
-    }, 1000);
-
 };
 
 
+// ---------------------------------- Input Cerca
 
+$('.cerca-wrapper .material-icons').click(function() {
+
+// Intercetto il valore scritto all'interno dell'INPUT cerca
+var testo_search = $('.cerca input').val().trim().toLowerCase();
+
+// Controllo che all'interno di .all-chat sia presente lo stesso testo dell'INPUT
+var single_chat = $('.all-chat').text().toLowerCase();
+
+if (single_chat.includes(testo_search)) {
+    console.log('nome trovato');
+} else {
+    console.log('nome non trovato');
+};
+
+// Se ci sono parole uguali, nascondo le .single-chat dove non è presente la parola dell'INPUT
+
+// Visualizzo la .single-chat con all'interno quella parola
+
+});
 
 
 
