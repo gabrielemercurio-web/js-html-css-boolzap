@@ -57,13 +57,19 @@ $('.cerca-wrapper .material-icons').click(function() {
 var testo_search = $('.cerca input').val().trim().toLowerCase();
 
 // Controllo che all'interno di .all-chat sia presente lo stesso testo dell'INPUT
-var single_chat = $('.all-chat').text().toLowerCase();
 
-if (single_chat.includes(testo_search)) {
-    console.log('nome trovato');
-} else {
-    console.log('nome non trovato');
-};
+$('.single-chat').each(function() {
+
+    var single_chat = $(this).find('.name p').text().toLowerCase();
+
+    if (single_chat.includes(testo_search)) {
+        $(this).show();
+    } else {
+        $(this).hide();
+    };
+})
+
+
 
 // Se ci sono parole uguali, nascondo le .single-chat dove non è presente la parola dell'INPUT
 
