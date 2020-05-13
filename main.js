@@ -91,12 +91,14 @@ $('.cerca-wrapper input.search-contact').keyup(function() {
 
 $('.single-chat').click(function() {
 
-    $('#wp-right').removeClass('active') ;
+    $('#wp-right').removeClass('active');
 
     var single_chat = $(this).find('.name p').text();
 
     $('#wp-right[data-single-chat="'+ single_chat +'"]').addClass('active');
 });
+
+
 
 
 
