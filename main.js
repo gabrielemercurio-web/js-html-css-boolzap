@@ -53,31 +53,50 @@ function invia_messaggio (){
 
 $('.cerca-wrapper .material-icons').click(function() {
 
-// Intercetto il valore scritto all'interno dell'INPUT cerca
-var testo_search = $('.cerca input').val().trim().toLowerCase();
+    // Intercetto il valore scritto all'interno dell'INPUT cerca
+    var testo_search = $('.cerca input').val().trim().toLowerCase();
 
-// Controllo che all'interno di .all-chat sia presente lo stesso testo dell'INPUT
+    // Controllo che all'interno di .all-chat sia presente lo stesso testo dell'INPUT
 
-$('.single-chat').each(function() {
+    $('.single-chat').each(function() {
 
-    var single_chat = $(this).find('.name p').text().toLowerCase();
+        var single_chat = $(this).find('.name p').text().toLowerCase();
 
-    if (single_chat.includes(testo_search)) {
-        $(this).show();
-    } else {
-        $(this).hide();
-    };
-})
-
-
-
-// Se ci sono parole uguali, nascondo le .single-chat dove non è presente la parola dell'INPUT
-
-// Visualizzo la .single-chat con all'interno quella parola
-
+        if (single_chat.includes(testo_search)) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        };
+    })
 });
 
+$('.cerca-wrapper input.search-contact').keyup(function() {
 
+    // Intercetto il valore scritto all'interno dell'INPUT cerca
+    var testo_search = $('.cerca input').val().trim().toLowerCase();
+
+    // Controllo che all'interno di .all-chat sia presente lo stesso testo dell'INPUT
+
+    $('.single-chat').each(function() {
+
+        var single_chat = $(this).find('.name p').text().toLowerCase();
+
+        if (single_chat.includes(testo_search)) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        };
+    })
+});
+
+$('.single-chat').click(function() {
+
+    $('#wp-right').removeClass('active') ;
+
+    var single_chat = $(this).find('.name p').text();
+
+    $('#wp-right[data-single-chat="'+ single_chat +'"]').addClass('active');
+});
 
 
 

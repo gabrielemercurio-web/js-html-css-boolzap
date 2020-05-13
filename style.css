@@ -213,6 +213,11 @@ section.all-chat {
     align-items: center;
 }
 
+.single-chat:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
 .chat {
     width: 82%;
     height: 100%;
@@ -233,7 +238,6 @@ section.all-chat {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-color: #fff;
 }
 
 .name p {
@@ -265,7 +269,6 @@ section.all-chat {
 .anteprima-chat .text {
     max-width: 85%;
     height: 100%;
-    background-color: #fff;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -321,9 +324,12 @@ section.all-chat {
     height: 100%;
     background-color: #ededed;
     float: left;
-    display: flex;
     flex-direction: column;
+    display: none;
+}
 
+#wp-right.active{
+    display: flex;
 }
 
 
@@ -365,7 +371,7 @@ section.right-center {
     height: calc(100% - 60px - 80px);
     background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
     background-repeat: repeat;
-    background-size: contain;
+    background-size: auto;
     padding: 20px 80px;
     overflow-y: scroll;
 }
