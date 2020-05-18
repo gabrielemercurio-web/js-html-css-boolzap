@@ -15,7 +15,7 @@ function invia_messaggio (){
     // salvare il messaggio scritto dell'utente in una var
     var messaggio_utente = $('input#input-msg').val();
 
-    var bubble = {
+    var my_bubble = {
         'my_name': 'Gabriele',
         'text_message': messaggio_utente
     };
@@ -23,7 +23,7 @@ function invia_messaggio (){
     // inserire il messaggio_utente nel template bubble in html
     // bubble.find('p.text-message').text(messaggio_utente);
 
-    var html = template(bubble);
+    var html_1 = template_1(my_bubble);
 
 
     // inviare il messaggio
@@ -32,7 +32,7 @@ function invia_messaggio (){
         alert('Errore: input vuoto!');
     } else {
         // Altrimenti, inserisco il bubble con il mio messaggio dentro allo spazio centrale
-        $('.right-center.active').append(html);
+        $('.right-center.active').append(html_1);
         // Svuoto il campo input
         $('#input-msg').val('');
 
@@ -41,17 +41,22 @@ function invia_messaggio (){
         // Messaggio di Risposta automatica del PC dopo 1 secondo
         setTimeout(function() {
 
-            var bubble_risposta = $('.template .bubble-msg').clone();
+            var nome_contatto = $('.active').data('single-chat');
 
-            var chat_active = $('.active').data('single-chat');
+            var contact_bubble = {
+                'contact_name': nome_contatto,
+                'contact_message': 'Ok!'
+            }
 
-            $(bubble_risposta).prepend('<h1>' + chat_active + '</h1>');
+            // var chat_active = $('.active').data('single-chat');
+            // $(bubble_risposta).prepend('<h1>' + chat_active + '</h1>');
 
-            bubble_risposta.addClass('contatto-bubble-msg');
+            // bubble_risposta.addClass('contatto-bubble-msg');
+            // bubble_risposta.find('p.text-message').text('Ok!');
 
-            bubble_risposta.find('p.text-message').text('Ok!');
+            var html_2 = template_2(contact_bubble);
 
-            $('.right-center.active').append(bubble_risposta);
+            $('.right-center.active').append(html_2);
 
         }, 1000);
     };
