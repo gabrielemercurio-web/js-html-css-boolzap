@@ -437,7 +437,7 @@ section.right-center {
     /* display: none; */
 }
 
-h1 {
+.right-center.active h1 {
     font-size: 15px;
     color: red;
     font-weight: 600;
@@ -445,12 +445,12 @@ h1 {
     clear: both;
 }
 
-.text-message {
+.right-center.active .text-message {
     float: left;
     clear: both;
 }
 
-small {
+.right-center.active small {
     font-size: 12px;
     color: #bbb;
     float: right;
@@ -458,7 +458,7 @@ small {
     margin-left: 30px;
 }
 
-.data-messaggio {
+.right-center.active .data-messaggio {
     max-width: 80%;
     height: auto;
     background-color: #e1f5feeb;
@@ -488,10 +488,6 @@ small {
     margin-top: 20px;
     position: relative;
     /* display: none; */
-}
-
-.template {
-    display: none;
 }
 
 .mio-bubble-msg svg {

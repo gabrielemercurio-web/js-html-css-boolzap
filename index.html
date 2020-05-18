@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <link rel="stylesheet" href="style.css">
         <title>Esercitazione Boolzap</title>
     </head>
@@ -346,14 +348,25 @@
 
         </div>
 
-        <div class="template">
-            <div class="bubble-msg">
-                <p class="text-message"></p>
-                <small>17:45</small>
+        <script id="template-mio-msg" type="text/x-handlebars-template">
+            <div class="bubble-msg mio-bubble-msg">
+                <h1> {{ my_name }} </h1>
+                <p class="text-message"> {{ text_message }} </p>
+                <small> {{ clock }} </small>
                 <span class="bubble-angle material-icons">signal_cellular_4_bar</span>
                 <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
             </div>
-        </div>
+        </script>
+
+        <script id="template-contatto-msg" type="text/x-handlebars-template">
+            <div class="bubble-msg mio-bubble-msg">
+                <h1> {{ contact_name }} </h1>
+                <p class="text-message"> {{ contact_message }} </p>
+                <small> {{ clock }} </small>
+                <span class="bubble-angle material-icons">signal_cellular_4_bar</span>
+                <svg class="svg-show-options" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" width="12" height="18"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg>
+            </div>
+        </script>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

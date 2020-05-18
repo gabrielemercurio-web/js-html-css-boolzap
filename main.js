@@ -9,27 +9,34 @@ $('#input-msg').keypress(function(event) {
     }
 });
 
+
 function invia_messaggio (){
     // intercettare il messaggio che l'utente scriverà nell'input
     // salvare il messaggio scritto dell'utente in una var
     var messaggio_utente = $('input#input-msg').val();
 
-    var bubble = $('.template .bubble-msg').clone().prepend('<h1>Gabriele</h1>');
-
-    bubble.addClass('mio-bubble-msg');
+    var bubble = {
+        'my_name': 'Gabriele',
+        'text_message': messaggio_utente
+    };
 
     // inserire il messaggio_utente nel template bubble in html
-    bubble.find('p.text-message').text(messaggio_utente);
+    // bubble.find('p.text-message').text(messaggio_utente);
+
+    var html = template(bubble);
+
 
     // inviare il messaggio
     // se il campo dell'input è vuoto
-    if ($('input#input-msg').val() == '') {
+    if (messaggio_utente == '') {
         alert('Errore: input vuoto!');
     } else {
         // Altrimenti, inserisco il bubble con il mio messaggio dentro allo spazio centrale
-        $('.right-center.active').append(bubble);
+        $('.right-center.active').append(html);
         // Svuoto il campo input
         $('#input-msg').val('');
+
+
 
         // Messaggio di Risposta automatica del PC dopo 1 secondo
         setTimeout(function() {
@@ -48,9 +55,14 @@ function invia_messaggio (){
 
         }, 1000);
     };
-
-
 };
+
+
+var source_1 = $("#template-mio-msg").html();
+var template_1 = Handlebars.compile(source_1);
+
+var source_2 = $("#template-contatto-msg").html();
+var template_2 = Handlebars.compile(source_2);
 
 
 
@@ -109,13 +121,17 @@ $('.single-chat').click(function() {
 
     $('.right-center[data-single-chat="'+ single_chat +'"]').addClass('active');
 
-    $('#input-msg').keypress(function(event) {
-        if (event.which == 13) {
-            invia_messaggio();
-        }
-    });
 });
 
+
+
+
+
+
+
+// ***********************************************
+//             OLD INVIO MESSAGGIO
+// ***********************************************
 
 
 
