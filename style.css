@@ -78,7 +78,7 @@ section.impostazioni {
 }
 
 .img-utente {
-    width: 18%;
+    width: 80px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -186,7 +186,7 @@ section.cerca {
 }
 
 input:focus {
-    outline:none;
+    outline: none;
 }
 
 ::placeholder {
@@ -213,13 +213,25 @@ section.all-chat {
     align-items: center;
 }
 
-.single-chat:hover {
-    background-color: #f3f3f3;
+.all-chat button {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0px;
+    display: flex;
+}
+
+.single-chat button:hover {
+    background-color: #f0f0f0;
     cursor: pointer;
 }
 
+.single-chat button:focus {
+    background-color: #9de1fe;
+}
+
 .chat {
-    width: 82%;
+    width: calc(100% - 80px);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -232,7 +244,7 @@ section.all-chat {
     justify-content: flex-start;
 }
 
-.name{
+.name {
     width: 75%;
     height: 100%;
     display: flex;
@@ -243,6 +255,7 @@ section.all-chat {
 .name p {
     font-size: 15px;
     font-weight: 600;
+    color: #333;
     /* margin-top: 10px; */
 }
 
@@ -434,6 +447,8 @@ section.right-center {
     position: relative;
     float: left;
     clear: both;
+    overflow-wrap: break-word;
+    word-break: normal;
     /* display: none; */
 }
 
@@ -445,7 +460,7 @@ section.right-center {
     clear: both;
 }
 
-.right-center.active .text-message {
+.right-center.active p.text-message {
     float: left;
     clear: both;
 }
@@ -490,12 +505,14 @@ section.right-center {
     /* display: none; */
 }
 
-.mio-bubble-msg svg {
-    display: none;
+.mio-bubble-msg svg, .contatto-bubble-msg svg {
+    opacity: 0;
+    margin-left: 10px;
 }
 
-.contatto-bubble-msg svg {
-    display: none;
+.mio-bubble-msg:hover svg, .contatto-bubble-msg:hover svg {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .bubble-angle {
