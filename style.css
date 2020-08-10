@@ -83,6 +83,7 @@ section.impostazioni {
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
 }
 
 .img {
@@ -369,46 +370,6 @@ section.right-top {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-.img-1 {
-    background-image: url('https://i1.wp.com/www.nerdpool.it/wp-content/uploads/2019/01/goku.jpg?resize=1068%2C639&ssl=1');
-}
-
-.img-2 {
-    background-image: url('https://www.drcommodore.it/wp-content/uploads/2018/11/Majin-Vegeta-Wallpaper-HD35-990x484.jpg');
-}
-
-.img-3 {
-    background-image: url('https://static3.cbrimages.com/wordpress/wp-content/uploads/2019/10/Unstoppable-Gohan-Cropped.jpg');
-}
-
-.img-4 {
-    background-image: url('https://www.optimagazine.com/wp-content/uploads/2017/06/dragon-ball-trunks.jpg');
-}
-
-.img-5 {
-    background-image: url('https://www.in-vendita.it/sh-img/hqdefault_junior%2Bdragon%2Bball.jpg');
-}
-
-.img-6 {
-    background-image: url('https://www.dragonballforever.it/wp-content/uploads/2016/11/crilin5.jpg');
-}
-
-.img-7 {
-    background-image: url('https://lh3.googleusercontent.com/proxy/jjKmH9kz3YaIuiWBIlQdg9qEUIbceJcc8gM9jVTNh3R-2ZAmXZLpBNE3M74q-nScwrw_h4j6RECJ8MfYdC2BSlv62oGtid0N6q3Kdm9MuFZ-BRhsW64Qd-X8OQ');
-}
-
-.img-8 {
-    background-image: url('https://images.everyeye.it/img-notizie/rivelata-scarpa-adidas-ispirata-majin-bu-dragon-ball-z-v4-317363.jpg');
-}
-
-.img-9 {
-    background-image: url('https://www.animeemanga.it/wp-content/uploads/2016/04/son-goten.jpg');
-}
-
-.img-10 {
-    background-image: url('https://vignette.wikia.nocookie.net/virtualarena/images/6/6b/C18.jpg/revision/latest/scale-to-width-down/340?cb=20120331143609&path-prefix=it');
 }
 
 .right-top-left .img {
